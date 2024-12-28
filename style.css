@@ -92,6 +92,11 @@ body {
     align-items: center;
     padding-left: 3rem;
     gap: 1.5rem;
+    font-size: 2rem;
+}
+
+.hello {
+    font-size: 1rem;
 }
 
 .buttons {
@@ -161,7 +166,7 @@ button {
     /* padding-top: 2rem; */
     display: grid;
     align-items: center;
-    grid-template-rows : 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows : 1fr 1fr 1fr 1fr 1fr 1fr ;
 }
 
 .nav-text-sec1 {
@@ -174,7 +179,7 @@ button {
     /* padding-top: 2rem; */
     display: grid;
     align-items: center;
-    grid-template-rows : 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows : 1fr 1fr 1fr 1fr 1fr 1fr ;
 }
 
 img {
@@ -199,6 +204,7 @@ img {
     display: grid;
     align-items: center;
     grid-template-rows : 1fr 1fr 1fr 2fr 9fr;
+    padding-top:2rem;
 }
 
 .nav-text-sec2 {
@@ -212,12 +218,13 @@ img {
     display: grid;
     align-items: center;
     grid-template-rows : 1fr 1fr 1fr 2fr 9fr;
+    padding-top:2rem;
 }
 
 .main {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    border: 1px solid black;
+    border: none;
     background-color: rgb(235, 233, 233);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -228,7 +235,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 13fr; 
-    border: 1px solid black;
+    border: none;
     background-color: rgb(235, 233, 233);
     grid-column: 1 / 3;
     grid-row: 1 / -1;
@@ -239,7 +246,8 @@ img {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     background-color: rgb(235, 233, 233);
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
     margin-left: 2rem;
     padding-top: 2rem;
 }
@@ -248,10 +256,10 @@ img {
     grid-column: 1 / -1;
     grid-row: 2 / -1;
     display: grid;
-    /* grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(3, 1fr); */
     background-color: rgb(235, 233, 233);
     gap: 3.5rem;
     margin: 2rem;
@@ -286,22 +294,25 @@ img {
     padding-bottom: 1rem;
 }
 
+.cardbody {
+    font-size: 1.2rem;
+}
+
 .announcements-trending {
     grid-column: 3 / -1;
     grid-row: 1 / -1;
-    border: 1px solid black;
     background-color: rgb(235, 233, 233);
     display: grid;
-    grid-template-rows: 0.75fr 3fr 0.75fr 3fr;
+    grid-template-rows: 0.2fr 1.2fr 0.2fr 1fr;
 } 
 
 
 .announcements-heading {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
-    border: 1px solid black;
     background-color: rgb(235, 233, 233);
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
     margin-left: 2rem;
     padding-top: 2rem;
 } 
@@ -309,28 +320,61 @@ img {
 .announcements-cards {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    border: 1px solid black;
-    background-color: rgb(235, 233, 233);
+    border: none;
+    background-color: white;
     margin: 2rem;
+    margin-top: 0rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    gap:0rem;
+    border-radius: 10px;
 } 
 
 .trending-heading {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
-    border: 1px solid black;
-    background-color: prgb(235, 233, 233);ink;
-    font-size: 60px;
-    margin-left: 80px;
-    padding-top: 80px;
+    background-color: rgb(235, 233, 233);;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    padding-top: 2rem;
 } 
 
 .trending-cards {
     grid-column: 1 / -1;
     grid-row: 4 / -1;
-    border: 1px solid black;
-    background-color: rgb(235, 233, 233);;
-    margin: 80px;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2rem;
+    margin-top: 0rem;
+    padding: 2rem;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
 } 
+
+.trendimg {
+    display: flex;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: lightblue;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.trend {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0.5rem;
+}
+
+
 
 
 
